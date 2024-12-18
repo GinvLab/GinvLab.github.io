@@ -20,7 +20,7 @@ nav li {
 nav li a {
     color: black; /* #004de6; */
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     display: inline-block;
     float: center;
@@ -83,7 +83,7 @@ header li a:hover {
 /* wide display: enforce maximum width of header to match content */
 @media (min-width: 940px) {
   header {
-      width: 1000px; /* 705px; */
+      width: 900px; /* 705px; */
     margin-left: auto;
     margin-right: auto;
   }

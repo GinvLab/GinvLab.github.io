@@ -10,7 +10,7 @@
 **G⁻¹Lab** is a framework to solve forward and inverse geophysical problems either using deterministic (optimization) or probabilistic (Monte Carlo) methods. It includes several packages addressing seismological and potential fields problems and algorithms to solve the related inverse problems. 
  
 
-G⁻¹Lab is a superset of the **HMCLab** framework and has thus absorbed all the HMCLab packages. Please see the following paper for more detailed info:
+**G⁻¹Lab** is a superset of the **HMCLab** framework and has thus absorbed all the HMCLab packages. Please see the following paper for more detailed info:
 
  * Andrea Zunino, Lars Gebraad, Alessandro Ghirotto, Andreas Fichtner, **HMCLab: a framework for solving diverse geophysical inverse problems using the Hamiltonian Monte Carlo method**, Geophysical Journal International, Volume 235, Issue 3, December 2023, Pages 2979–2991  [https://doi.org/10.1093/gji/ggad403](https://doi.org/10.1093/gji/ggad403)
 
