@@ -28,17 +28,18 @@ Then add a package, such as, for instance, `EikonalSolvers`, by simply issuing
 
 ## Packages
 
-G⁻¹Lab comprises a set of packages for solving forward and inverse geophysical problems. The Julia code is hosted at [https://github.com/GinvLab](https://github.com/GinvLab). Here below a list of the currently available packages along with a short description. Refer to the each package's documentation for more info. **Several packages are still evolving and thus somewhat work in progress. Moreover, some packages are currently still offline.** 
+G⁻¹Lab comprises a set of packages for solving forward and inverse geophysical problems. The Julia code is hosted at [https://github.com/GinvLab](https://github.com/GinvLab). Here below a list of the currently available packages along with a short description. Refer to the each package's documentation for more info. 
+**Packages are still evolving and thus somewhat work in progress. Moreover, some packages are currently still offline.** 
 
 Forward and gradient calculations:
   
-  * [SeismicWaves.jl](https://github.com/GinvLab/SeismicWaves.jl) [[docs](https://ginvlab.github.io/SeismicWaves.jl)] 2D and 3D acoustic (elastic is work in progress) seismic wave propagation and gradients (using the adjoint method).
+  * [SeismicWaves.jl](https://github.com/GinvLab/SeismicWaves.jl) [[docs](https://ginvlab.github.io/SeismicWaves.jl)] 2D and 3D acoustic and elastic (3D elastic is currently work in progress) seismic wave propagation and gradients using the adjoint state method.
   
-  * [EikonalSolvers.jl](https://github.com/GinvLab/EikonalSolvers.jl) [[docs](https://ginvlab.github.io/EikonalSolvers.jl)] Seismic traveltime computations by solving the eikonal equation in 2D and 3D.  
+  * [EikonalSolvers.jl](https://github.com/GinvLab/EikonalSolvers.jl) [[docs](https://ginvlab.github.io/EikonalSolvers.jl)] Seismic traveltime computations by solving the eikonal equation in 2D and 3D using the fast-marching method for forward calculations and the adjoint state method to compute gradients.
   
-  * [MagGrav2Dpoly.jl](https://github.com/GinvLab/MagGrav2Dpoly.jl) [[docs](https://ginvlab.github.io/MagGrav2Dpoly.jl)] Magnetic and gravity anomalies calculations for polygonal shapes in 2.75D.
+  * [MagGravPoly.jl](https://github.com/GinvLab/MagGrav2Dpoly.jl) [[docs](https://ginvlab.github.io/MagGrav2Dpoly.jl)] Magnetic and gravity anomalies calculations for polygonal shapes in 2D or 2.75D (3D is work in progress).
    
-  * [GeophPriors.jl](https://github.com/GinvLab/GeophPriors.jl) [[docs](https://ginvlab.github.io/GeophPriors.jl)] Priors including a multivariate Beta prior with a Normal copula.
+  * [GeophPriors.jl](https://github.com/GinvLab/GeophPriors.jl) [[docs](https://ginvlab.github.io/GeophPriors.jl)] Priors useful for geophysical inverse problems, including a multivariate Beta prior with a Normal copula.
   
   * [ReflSeismoAD.jl](https://github.com/GinvLab/ReflSeismoAD.jl) [[docs](https://ginvlab.github.io/ReflSeismoAD.jl)] AVA seismic data and rock physics models in 1-2-3D.
   
