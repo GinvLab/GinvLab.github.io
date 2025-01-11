@@ -1,0 +1,53 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/styles/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/basic.css"> <link rel=icon  href="/assets/favicon.png"> <title>G⁻¹Lab</title> <header> <div class=blog-name > <img src="/assets/ginvlab_header.png" style="width: 900px; min-width: 300px;" id=logo_ginvlab > </div> <nav> <ul> <li><a href="/">Home</a> <li><a href="/tutorials/">Tutorials</a> <li><a href="/publications/">Publications</a> </ul> <img src="/assets/hamburger.svg" id=menu-icon > </nav> </header> <div class=franklin-content ><h1 id=glab ><a href="#glab" class=header-anchor >G⁻¹Lab </a></h1> <p><div class=franklin-toc ><ol><li><a href="#overview">Overview</a><li><a href="#installation">Installation</a><li><a href="#packages">Packages</a></ol></div> </p> <h2 id=overview ><a href="#overview" class=header-anchor >Overview</a></h2> <p><strong>G⁻¹Lab</strong> is a framework to solve forward and inverse geophysical problems either using deterministic &#40;optimization&#41; or probabilistic &#40;Monte Carlo&#41; methods. It includes several packages addressing seismological and potential fields problems and algorithms to solve the related inverse problems. </p> <p><strong>G⁻¹Lab</strong> is a superset of the <strong>HMCLab</strong> framework and has thus absorbed all the HMCLab packages. Please see the following paper for more detailed info:</p> <ul> <li><p>Andrea Zunino, Lars Gebraad, Alessandro Ghirotto, Andreas Fichtner, <strong>HMCLab: a framework for solving diverse geophysical inverse problems using the Hamiltonian Monte Carlo method</strong>, Geophysical Journal International, Volume 235, Issue 3, December 2023, Pages 2979–2991 <a href="https://doi.org/10.1093/gji/ggad403">https://doi.org/10.1093/gji/ggad403</a></p> </ul> <h2 id=installation ><a href="#installation" class=header-anchor >Installation</a></h2> <p>The easiest way to install packages from G⁻¹Lab is to first add the <code>G⁻¹Lab</code> Julia registry and then install the packages by simply issuing <code>add</code> in the package manager mode. To do so, first enter into the package manager mode in Julia by typing &quot;&#93;&quot; at the REPL prompt and add the <code>G⁻¹Lab</code> registry as follows</p> <pre><code class="julia hljs">(<span class=hljs-meta >@v1</span><span class=hljs-number >.10</span>) pkg&gt; registry add https://github.com/GinvLab/GinvLabRegistry</code></pre>
+<p>Then add a package, such as, for instance, <code>EikonalSolvers</code>, by simply issuing</p>
+<pre><code class="julia hljs">(<span class=hljs-meta >@v1</span><span class=hljs-number >.10</span>) pkg&gt; add EikonalSolvers</code></pre>
+<h2 id=packages ><a href="#packages" class=header-anchor >Packages</a></h2>
+<p>G⁻¹Lab comprises a set of packages for solving forward and inverse geophysical problems. The Julia code is hosted at <a href="https://github.com/GinvLab">https://github.com/GinvLab</a>. Here below a list of the currently available packages along with a short description. Refer to the each package&#39;s documentation for more info.  <strong>Packages are still evolving and thus somewhat work in progress. Moreover, some packages are currently still offline.</strong> </p>
+<p>Forward and gradient calculations:</p>
+<ul>
+<li><p><a href="https://github.com/GinvLab/SeismicWaves.jl">SeismicWaves.jl</a> &#91;<a href="https://ginvlab.github.io/SeismicWaves.jl">docs</a>&#93; 2D and 3D acoustic and elastic &#40;3D elastic is currently work in progress&#41; seismic wave propagation and gradients using the adjoint state method.</p>
+
+</ul>
+<ul>
+<li><p><a href="https://github.com/GinvLab/EikonalSolvers.jl">EikonalSolvers.jl</a> &#91;<a href="https://ginvlab.github.io/EikonalSolvers.jl">docs</a>&#93; Seismic traveltime computations by solving the eikonal equation in 2D and 3D using the fast-marching method for forward calculations and the adjoint state method to compute gradients.</p>
+
+</ul>
+<ul>
+<li><p><a href="https://github.com/GinvLab/MagGrav2Dpoly.jl">MagGravPoly.jl</a> &#91;<a href="https://ginvlab.github.io/MagGrav2Dpoly.jl">docs</a>&#93; Magnetic and gravity anomalies calculations for polygonal shapes in 2D or 2.75D &#40;3D is work in progress&#41;.</p>
+
+</ul>
+<ul>
+<li><p><a href="https://github.com/GinvLab/GeophPriors.jl">GeophPriors.jl</a> &#91;<a href="https://ginvlab.github.io/GeophPriors.jl">docs</a>&#93; Priors useful for geophysical inverse problems, including a multivariate Beta prior with a Normal copula.</p>
+
+</ul>
+<ul>
+<li><p><a href="https://github.com/GinvLab/ReflSeismoAD.jl">ReflSeismoAD.jl</a> &#91;<a href="https://ginvlab.github.io/ReflSeismoAD.jl">docs</a>&#93; AVA seismic data and rock physics models in 1-2-3D.</p>
+
+</ul>
+<p>Inversion algorithms:</p>
+<ul>
+<li><p><a href="https://github.com/GinvLab/InverseAlgos.jl">InverseAlgos.jl</a> &#91;<a href="https://ginvlab.github.io/InverseAlgos.jl">docs</a>&#93; Inversion algorithm subdivided in three sub-modules/categories:</p>
+<ul>
+<li><p><strong>Hamiltonian Monte Carlo</strong> and &quot;classic&quot; <strong>Metropolis-Hastings</strong> samplers. Includes the &quot;plain&quot; HMC, the NUTS algorithms et al..</p>
+
+<li><p><strong>Optimization</strong>. Currently only the L-BFGS algorithm &#40;with optional box constraints&#41; is implemented.</p>
+
+<li><p><strong>Linear inverse problems under Gaussian uncertainties</strong>. Kronecker product-based inversion &#40;<code>KronLinInv</code>&#41; and classic least squares.</p>
+
+</ul>
+
+</ul>
+<p>Examples/tutorials:</p>
+<ul>
+<li><p><a href="https://github.com/GinvLab/GinvLab-examples.jl">GinvLab-examples</a> &#91;<a href="https://ginvlab.github.io/GinvLab-examples.jl">docs</a>&#93; A set of scripts and Jupyter notebooks illustrating some simple example problems solved using the packages part of G⁻¹Lab.</p>
+
+</ul>
+<div class=page-foot >
+    © G⁻¹Lab. Last modified: January 11, 2025.
+    Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+</div>
+</div>
+    
+    
+        <script src="/libs/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll();hljs.configure({tabReplace: '    '});</script>
