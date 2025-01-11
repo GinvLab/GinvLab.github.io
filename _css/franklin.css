@@ -91,7 +91,7 @@ html {
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
     .franklin-content {
-	width: 900px; /* 705px; */
+	width: 850px; /* 705px; */
 	margin-left: auto;
 	margin-right: auto;
     }
