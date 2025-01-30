@@ -37,7 +37,7 @@ Forward and gradient calculations:
   
   * [EikonalSolvers.jl](https://github.com/GinvLab/EikonalSolvers.jl) [[docs](https://ginvlab.github.io/EikonalSolvers.jl)] Seismic traveltime computations by solving the eikonal equation in 2D and 3D using the fast-marching method for forward calculations and the adjoint state method to compute gradients.
   
-  * [MagGravPoly.jl](https://github.com/GinvLab/MagGrav2Dpoly.jl) [[docs](https://ginvlab.github.io/MagGrav2Dpoly.jl)] Magnetic and gravity anomalies calculations for polygonal shapes in 2D or 2.75D (3D is work in progress).
+  * [MagGravPoly.jl](https://github.com/GinvLab/MagGravPoly.jl) [[docs](https://ginvlab.github.io/MagGravPoly.jl)] Magnetic and gravity anomalies calculations for polygonal shapes in 2D or 2.75D (3D is work in progress).
    
   * [GeophPriors.jl](https://github.com/GinvLab/GeophPriors.jl) [[docs](https://ginvlab.github.io/GeophPriors.jl)] Priors useful for geophysical inverse problems, including a multivariate Beta prior with a Normal copula.
   
