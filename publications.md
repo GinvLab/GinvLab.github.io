@@ -7,6 +7,10 @@ General (main) reference:
 
 * Zunino A., Gebraad L., Ghirotto A., Fichtner A. (2023). **HMCLab: a framework for solving diverse geophysical inverse problems using the Hamiltonian Monte Carlo method**. Geophysical Journal International, Volume 235, Issue 3 Pages 2979–2991  [https://doi.org/10.1093/gji/ggad403](https://doi.org/10.1093/gji/ggad403)
 
+Eikonal solver:
+
+* Andrea Zunino, Scott Keating, Andreas Fichtner (2025), **A discrete adjoint method for deterministic and probabilistic eikonal-equation-based inversion of traveltime for velocity and source location**, Geophysical Journal International, Volume 243, Issue 1, October 2025, ggaf283, [https://doi.org/10.1093/gji/ggaf283](https://doi.org/10.1093/gji/ggaf283)
+
 Potential fields:
 
 * Zunino, Ghirotto, Armadillo, & Fichtner (2022). **Hamiltonian Monte Carlo probabilistic joint inversion of 2D (2.75D) gravity and magnetic data**. Geophysical Research Letters, 49, e2022GL099789. [https://doi.org/10.1029/2022GL099789](https://doi.org/10.1029/2022GL099789).
